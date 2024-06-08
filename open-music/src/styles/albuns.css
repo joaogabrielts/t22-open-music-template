@@ -1,0 +1,86 @@
+.albuns-section{
+    margin: 10px 0px;
+    margin-bottom: 30px;
+}
+.albuns-section__details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 50px;
+}
+.album{
+    display: flex;
+    flex-direction: column;
+    width: 308px;
+  flex: 1 1 auto;
+    background-color: var(--gray-7);
+}
+.album:hover{
+    background-color: var(--gray-5);
+}
+
+.album-img{
+      object-fit: fill;
+     border-radius: 5px 5px 0px 0px;
+   
+}
+/*
+
+.fill {
+ 
+}
+
+.contain {
+  
+}
+
+.cover {
+ object-fit: cover;
+}
+
+.none {
+  object-fit: none;
+}
+
+.scale-down {
+  object-fit: scale-down;
+}*/
+
+
+.album-title{
+    color: var(--gray-2);
+    font-weight: 600;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.album-details{
+    margin-left: 5px; 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.album-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.price-value{
+    font-weight: 600;
+    color: var(--gray-2);
+}
+
+.buy-button{
+    background-color: var(--brand-2);
+    border: none;
+    color: var(--gray-7);
+    padding: 10px;
+    border-radius: 4px;
+}
+.buy-button:hover{
+    background-color: var(--brand-1);
+}

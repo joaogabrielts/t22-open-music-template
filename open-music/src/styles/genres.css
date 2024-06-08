@@ -1,3 +1,6 @@
+.Genero-section{
+ margin: 10px 0px;
+}
 
 .paragraph-genre{
     font-weight: 600;
@@ -5,8 +8,33 @@
 
 .genre-filter{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .genre-item{
      font-weight: 500;
+     margin: 20px 0px;
+}
+
+.item-button{
+    padding: 8px;
+    border-radius:5px ;
+    background-color: var(--gray-6);
+}
+.item-button__destaque{
+ background-color:var(--gray-2);
+ color:  var(--gray-7);
+ padding: 8px;
+ border: none;
+ border-radius:5px ;
+}
+.item-button:hover{
+    border: 2px solid var(--gray-1);
+}
+
+.item-button{
+    border: none;
 }

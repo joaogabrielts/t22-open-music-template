@@ -12,9 +12,9 @@
     --gray-3:rgba(43, 47, 51, 1);
     --gray-4:rgba(206, 212, 218, 1);
     --gray-5:rgba(222, 226, 230, 1);
-    --gray-6:rgba(0, 0, 0, 0.2);
-    --gray-7:rgba(0, 0, 0, 0.2);
-    --gray-8:rgba(0, 0, 0, 0.2);  
+    --gray-6:rgba(241, 243, 245, 1);
+    --gray-7:rgba(248, 249, 250, 1);;
+    --gray-8:rgba(253, 254, 255, 1);
 
     --font-principal: "Inter", sans-serif;
 }
@@ -22,5 +22,6 @@
 body{
     max-width:1024px ;
     font-family: var(--font-principal);
-    margin: auto;
+    margin: 0 auto;
+    background-color: var(--gray-8);
 }

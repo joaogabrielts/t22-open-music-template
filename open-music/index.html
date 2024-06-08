@@ -19,18 +19,19 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
       <!-- SEÇÃO DE FILTRO POR GENERO -->
-      <section>
+      <section class="Genero-section">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-         <p class="paragraph-genre">Gênero Musical</p>
+         <h3 class="paragraph-genre">Gênero Musical</h3>
         <ul class="genre-filter">
-          <li class="genre-item">Todos</li>
-          <li class="genre-item">Pop</li>
-          <li class="genre-item">MPB</li>
-          <li class="genre-item">Forró</li>
-          <li class="genre-item">Samba</li>
-          <li class="genre-item">Balão</li>
-          <li class="genre-item">Rap</li>
-          <li class="genre-item">Hip-Hop</li>
+  
+          <li class="genre-item"> <button class="item-button__destaque">Todos</button></li>
+          <li class="genre-item"> <button class="item-button">Pop</button></li>
+          <li class="genre-item"> <button class="item-button">MPB</button></li>
+          <li class="genre-item"> <button class="item-button">Forró</button></li>
+          <li class="genre-item"> <button class="item-button">Samba</button></li>
+          <li class="genre-item"> <button class="item-button">Balão</button></li>
+          <li class="genre-item"> <button class="item-button"> Rap</button></li>
+          <li class="genre-item"> <button class="item-button">Hip-Hop</button></li>
          </ul>
       
       </section>
@@ -38,8 +39,12 @@
       <!-- SEÇÃO DE FILTRO POR PREÇO -->
       <section class="price-section">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
-         <p class="price-label">Definir Preço</p>
-         <p class="price-range">até <span class="price-range__highlight">R$ 100</span></p>
+         <div class="price-details">
+             <h3 class="price-label">Definir Preço</h3>
+                <h3 class="price-range">até <span class="price-range__highlight">R$ 100</span></h3>
+         </div>
+      
+      
           <input type="range" id="volume" name="volume" min="0" max="100" class="price-input" />
       </section>
 
@@ -47,10 +52,10 @@
       <section class="albuns-section">
         <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
 
-       <p>Albuns Encontrados</p>
-        
-       <div class="album">
-         <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum">
+       <h3>Albuns Encontrados</h3>
+        <div class="albuns-section__details">
+           <div class="album">
+         <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum" class="album-img">
                 <p class="album-title">Acabou o Chorare</p>
                 <div class="album-details">
                   <p>Novos Balanos</p>
@@ -64,7 +69,7 @@
        </div>
                
        <div class="album">
-        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum">
+        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum" class="album-img" >
                <p class="album-title">The Wall</p>
                <div class="album-details">
                  <p>Pink Floyd</p>
@@ -78,7 +83,7 @@
       </div>
               
       <div class="album">
-        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum">
+        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum" class="album-img">
                <p class="album-title">To Pimp a Butterfly</p>
                <div class="album-details">
                  <p>Kendrick Lamar</p>
@@ -91,7 +96,7 @@
                </div>
       </div>
       <div class="album">
-        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum">
+        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum" class="album-img">
                <p class="album-title">The Wall</p>
                <div class="album-details">
                  <p>Pink Floyd</p>
@@ -104,7 +109,7 @@
                </div>
       </div>
       <div class="album">
-        <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum">
+        <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum" class="album-img">
                <p class="album-title">Acabou o Chorare</p>
                <div class="album-details">
                  <p>Novos Balanos</p>
@@ -117,7 +122,7 @@
                </div>
       </div>
       <div class="album">
-        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum">
+        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum" class="album-img">
                <p class="album-title">To Pimp a Butterfly</p>
                <div class="album-details">
                  <p>Kendrick Lamar</p>
@@ -131,9 +136,8 @@
       </div>
               
       
-
+        </div>
       
-
       </section>
     </main>
   </body>
