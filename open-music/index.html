@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header class="header">
+      <!-- DESENVOLVA AQUI OS ELEMENTOS DO CABEÇALHO -->
+      <h1 class="header-title"><span class="highlight">o</span>pen <span class="highlight">m</span>usic</h1> 
+
+      <button class="button-icons"></button>
+
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+      <!-- SEÇÃO DE FILTRO POR GENERO -->
+      <section>
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+         <p class="paragraph-genre">Gênero Musical</p>
+        <ul class="genre-filter">
+          <li class="genre-item">Todos</li>
+          <li class="genre-item">Pop</li>
+          <li class="genre-item">MPB</li>
+          <li class="genre-item">Forró</li>
+          <li class="genre-item">Samba</li>
+          <li class="genre-item">Balão</li>
+          <li class="genre-item">Rap</li>
+          <li class="genre-item">Hip-Hop</li>
+         </ul>
+      
+      </section>
+
+      <!-- SEÇÃO DE FILTRO POR PREÇO -->
+      <section class="price-section">
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+         <p class="price-label">Definir Preço</p>
+         <p class="price-range">até <span class="price-range__highlight">R$ 100</span></p>
+          <input type="range" id="volume" name="volume" min="0" max="100" class="price-input" />
+      </section>
+
+      <!-- SEÇÃO DE ALBUNS -->
+      <section class="albuns-section">
+        <!-- DESENVOLVA AQUI OS ELEMENTOS DA SEÇÃO -->
+
+       <p>Albuns Encontrados</p>
+        
+       <div class="album">
+         <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum">
+                <p class="album-title">Acabou o Chorare</p>
+                <div class="album-details">
+                  <p>Novos Balanos</p>
+                  <p>MPB</p>
+                </div>
+
+                <div class="album-price">
+                  <p class="price-value">R$ 137,91</p>
+                  <button class="buy-button">Comprar</button>
+                </div>
+       </div>
+               
+       <div class="album">
+        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum">
+               <p class="album-title">The Wall</p>
+               <div class="album-details">
+                 <p>Pink Floyd</p>
+                 <p>Rock</p>
+               </div>
+
+               <div class="album-price">
+                 <p class="price-value">R$ 123,56</p>
+                 <button class="buy-button">Comprar</button>
+               </div>
+      </div>
+              
+      <div class="album">
+        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum">
+               <p class="album-title">To Pimp a Butterfly</p>
+               <div class="album-details">
+                 <p>Kendrick Lamar</p>
+                 <p>Rap</p>
+               </div>
+
+               <div class="album-price">
+                 <p class="price-value">R$ 102,66</p>
+                 <button class="buy-button">Comprar</button>
+               </div>
+      </div>
+      <div class="album">
+        <img src="src/assets/img/cover-2.jpg" alt="Capa do álbum">
+               <p class="album-title">The Wall</p>
+               <div class="album-details">
+                 <p>Pink Floyd</p>
+                 <p>Rock</p>
+               </div>
+
+               <div class="album-price">
+                 <p class="price-value">R$ 123,56</p>
+                 <button class="buy-button">Comprar</button>
+               </div>
+      </div>
+      <div class="album">
+        <img src="src/assets/img/cover-1.jpg" alt="Capa do álbum">
+               <p class="album-title">Acabou o Chorare</p>
+               <div class="album-details">
+                 <p>Novos Balanos</p>
+                 <p>MPB</p>
+               </div>
+
+               <div class="album-price">
+                 <p class="price-value">R$ 137,91</p>
+                 <button class="buy-button">Comprar</button>
+               </div>
+      </div>
+      <div class="album">
+        <img src="src/assets/img/cover-3.jpg" alt="Capa do álbum">
+               <p class="album-title">To Pimp a Butterfly</p>
+               <div class="album-details">
+                 <p>Kendrick Lamar</p>
+                 <p>Rap</p>
+               </div>
+
+               <div class="album-price">
+                 <p class="price-value">R$ 102,66</p>
+                 <button class="buy-button">Comprar</button>
+               </div>
+      </div>
+              
+      
+
+      
+
+      </section>
+    </main>
+  </body>
+</html>

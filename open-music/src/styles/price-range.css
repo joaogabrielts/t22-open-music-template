@@ -1,0 +1,15 @@
+.price-section{
+
+}
+
+.price-label{
+    font-weight: 600;
+}
+
+.price-range{
+    font-weight: 600;
+}
+
+.price-range__highlight{
+    color: var(--brand-1);
+}
