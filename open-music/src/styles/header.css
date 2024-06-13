@@ -1,4 +1,4 @@
-.header{
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,6 +8,10 @@
     position: sticky;
     z-index: 1;
     top: 0px;
+}
+.header{
+background-color:var(--gray-1) ;
+color: var(--gray-7);
 }
 .highlight{
     color: var(--brand-2);
@@ -21,4 +25,18 @@
     padding: 15px;
    border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
+
+.button-sun{
+    background-image: url('../assets/icons/sun-icon.svg');
+    background-repeat: no-repeat;
+    background-color: var(--gray-3);
+    background-position: center; 
+    width: 20px;
+    padding: 15px;
+   border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+

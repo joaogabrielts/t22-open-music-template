@@ -3,4 +3,15 @@
 @import url(price-range.css);
 @import url(header.css);
 @import url(genres.css);
-@import url(albuns.css);
+@import url(albuns.css );
+
+
+
+.titulos{
+    font-weight: 600;
+    color: var(--gray-1);
+}
+.titulos-sun{
+    font-weight:600;
+    color: var(--gray-7);
+}

@@ -25,3 +25,7 @@ body{
     margin: 0 auto;
     background-color: var(--gray-8);
 }
+
+.body{
+    background-color: var(--gray-1);
+}

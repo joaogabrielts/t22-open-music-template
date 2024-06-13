@@ -2,7 +2,9 @@
  margin: 10px 0px;
 }
 
-.paragraph-genre{
+
+.paragraph-genre__sun{
+    color: var(--gray-7);
     font-weight: 600;
 }
 
@@ -23,7 +25,15 @@
     padding: 8px;
     border-radius:5px ;
     background-color: var(--gray-6);
+   
 }
+.item-button__sun{
+    padding: 8px;
+    border-radius:5px ;
+    color: white;
+    background-color: var(--gray-2);
+}
+
 .item-button__destaque{
  background-color:var(--gray-2);
  color:  var(--gray-7);
@@ -31,8 +41,10 @@
  border: none;
  border-radius:5px ;
 }
+
+
 .item-button:hover{
-    border: 2px solid var(--gray-1);
+    border: 1px solid var(--gray-1);
 }
 
 .item-button{
