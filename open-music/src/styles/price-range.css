@@ -21,7 +21,7 @@
     color: var(--brand-1);
 }
 
-/* Selecionando o elemento input range (selecione por id ou classe) */
+
 #volume{
     -webkit-appearance: none;
     appearance: none;
