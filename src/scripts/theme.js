@@ -10,6 +10,7 @@ export const createAlbuns = async () => {
 
         const albumList = await fetchMusics();
       
+      
         albumList.forEach((album) => {
             const divAlbum = document.createElement("div");
             const albumImg = document.createElement('img');

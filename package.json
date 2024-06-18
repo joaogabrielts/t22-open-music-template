@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "esm": "^3.2.25",
-    "index.js": "^0.0.3",
-    "scripts": "^0.1.0"
-  }
-}
