@@ -9,7 +9,8 @@ export const createAlbuns = async () => {
     try {
 
         const albumList = await fetchMusics();
-      
+       
+     
       
         albumList.forEach((album) => {
             const divAlbum = document.createElement("div");
@@ -21,6 +22,11 @@ export const createAlbuns = async () => {
             const divPrice = document.createElement('div');
             const priceValue = document.createElement('p');
             const button = document.createElement('button');
+          
+
+            
+          
+ 
     
             divAlbum.classList.add('album');
             titleAlbum.classList.add('album-title');
@@ -37,6 +43,9 @@ export const createAlbuns = async () => {
     
             paragrafoDetails.innerText = album.band;
             paragrafoDetailsAlbum.innerText = album.genre;
+            if(album.genre.toLowerCase() === 'MPB'.toLowerCase()){
+                   console.log(album);
+            }
             divDetails.appendChild(paragrafoDetails);
             divDetails.appendChild(paragrafoDetailsAlbum);
     
@@ -44,6 +53,7 @@ export const createAlbuns = async () => {
             divPrice.appendChild(priceValue);
             button.innerText = 'Comprar';
             divPrice.appendChild(button);
+         
     
             divAlbum.appendChild(albumImg);
             divAlbum.appendChild(titleAlbum);
@@ -62,6 +72,9 @@ export const createAlbuns = async () => {
     albuns();
 };
 
+
+
+
 const albuns = () => {
     const buttonIcons = document.querySelector('.button-icons');
     const body = document.querySelector('body');
@@ -73,13 +86,27 @@ const albuns = () => {
     const titleAlbum = document.querySelectorAll('.album-title');
     const priceValue = document.querySelectorAll(".price-value");
 
+
+    buttonGenre.forEach((lista) => {
+     
+        lista.addEventListener('click', () => {
+          
+            if(lista.innerText.toLowerCase() === 'MPB'.toLowerCase()){
+                       createAlbuns();
+            }
+        })
+        })
+        
+
     const applySunTheme = () => {
+      
         buttonIcons.classList.remove('button-icons');
         buttonIcons.classList.add('button-sun');
 
         body.classList.add('body');
         header.classList.add('header');
 
+    
         buttonGenre.forEach((button) => {
             button.classList.remove("item-button");
             button.classList.add("item-button__sun");
@@ -145,7 +172,7 @@ const albuns = () => {
 
         localStorage.setItem('theme', 'default');
     };
-
+  console.log(buttonIcons);
     buttonIcons.addEventListener('click', () => {
         if (buttonIcons.classList.contains('button-icons')) {
             applySunTheme();
